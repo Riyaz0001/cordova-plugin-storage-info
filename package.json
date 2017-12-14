@@ -1,0 +1,35 @@
+{
+  "name": "StroageInfo",
+  "version": "1.0.0",
+  "description": "Cordova Android Internal External Stroage Info Plugin",
+   "cordova":{
+        "id":"cordova-plugin-storage-info",
+        "platforms":[
+            "android"
+        ]
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riyaz0001/cordova-plugin-storage-info.git"
+  },
+  "keywords": [
+    "ionic",
+    "cordova",
+    "internal",
+    "external",
+    "stroage",
+    "info",
+    "SdCard",
+    "Android"
+  ],
+  "engines":{
+        "name":"cordova",
+        "version":">=3.0.0"
+  },
+  "author": "MD.Riyaz Uddin",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "hhttps://github.com/Riyaz0001/cordova-plugin-storage-info/issues"
+  },
+  "homepage": "https://github.com/Riyaz0001/cordova-plugin-storage-info#readme"
+}

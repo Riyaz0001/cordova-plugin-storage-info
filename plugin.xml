@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-storage-info"
+        version="1.0.0">
+
+    <name>StroageInfo</name>
+    <description>Cordova Android Internal External Stroage Info Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,internal,external,stroage,info,SdCard</keywords>
+    <repo>https://github.com/Riyaz0001/cordova-plugin-storage-info.git</repo>  
+
+
+    <engines>
+        <engine name="cordova" version=">=3.4.0"/>
+    </engines>
+
+    <js-module src="www/storage_info.js" name="StorageInfo">
+        <clobbers target="StorageInfo" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="StorageInfo">
+            <param name="android-package" value="com.mrustudio.plugin.storageinfo.StorageInfo"/>
+        </feature>
+        </config-file>
+            <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        </config-file>
+
+        <source-file src="src/android/StorageInfo.java" target-dir="src/com/mrustudio/plugin/storageinfo/"/>
+    </platform>
+
+</plugin>
